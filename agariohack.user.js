@@ -1,9 +1,9 @@
 // ==UserScript==
-// @name         Agar.io Split HACK - Agario Hacks - Best Agar Cheat 2019
+// @name         Agar.io Split HACK - Bonkio Hacks - Best Bonk Cheat 2019
 // @description  Agario Mods Features: Split Hack, Zoom Hack, Feed Hack, Free Skins, FPS, Adblock
 // @namespace    iomods.org
 // @author       iomods.org
-// @version      1.0
+// @version      1.1
 // @require      http://code.jquery.com/jquery-3.3.1.min.js
 // @updateURL    https://iomods.org/mods/agario.user.js
 // @downloadURL  https://iomods.org/mods/agario.user.js
@@ -116,7 +116,7 @@ function hideandseek() {
 //background kismi degisir
 function changebackground() {
     var changecolor =  $('.bgcont').val();
-$('body').css('background-color',''+changecolor+'');
+$('#overlays').css('background-color',''+changecolor+'');
 }
 
 var colorsrain;
@@ -132,7 +132,7 @@ function colorfulmod() {
       setInterval(function() {
                  var bodybgarrayno = Math.floor(Math.random() * colorsrain.length);
                  var selectedcolor = colorsrain[bodybgarrayno];
-                $("body").css("background-color",selectedcolor);
+                $("#overlays").css("background-color",selectedcolor);
       }, 3000);
 }
 
